@@ -1,0 +1,179 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica neut", sans-serif;
+}
+#hero{
+    background: linear-gradient(60deg, rgb(98, 114, 236), rgb(240, 213, 134)), rgb(171, 180, 177);
+    position: relative;
+    display: block;
+    margin: 0rem;
+    bottom: 10%;
+    z-index: 99;
+}
+.seeme1{
+    position: relative;
+    display: block;
+    right: 80%;
+    bottom: 5%;
+}
+#hero1{
+    position: relative;
+
+}
+.searchME{
+    position: absolute;
+    font-size: 60px;
+    font-weight: bold;
+    font-family:  Helvetica, Arial, sans-serif;
+    line-height: 1px;
+    color: rgba(44, 68, 79, 0.8);
+    margin-right: 60%;
+    text-decoration: none;
+    top: 40%;
+    left: 10%;
+}
+.z{
+    font-size: 18px;
+    text-decoration: none;
+    position: absolute;
+    font-family:  Helvetica, Arial, sans-serif;
+    margin-top: 25%;
+    padding-left: 80px;
+    }
+strong{
+    color: rgb(193, 9, 9);
+}
+
+.container{
+    width: 500px;
+    height: 700px;
+    left: 45%;
+    position: relative;
+    display: block;
+    margin-right: 40%;
+    bottom: 50%;
+    padding: 0px 20px;
+    overflow: hidden;
+    z-index: 99;
+}  
+.Employer{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    margin-left: 1rem;
+    width: 350px;
+    height: 600px;
+    padding: 0px 20px;
+    padding-right: 20px;
+    transition: 0.5s;
+}
+.Employee{
+    position: absolute;
+    bottom: 50px;
+    left: 105%;
+    box-sizing: content-box;
+    width: 500px;
+    height: 600px;
+    margin-left: 1.5rem;
+    padding: 0px 20px;
+    transition: 0.5s;
+}
+.input-group{
+    margin-top: 30px;
+    padding-right: 40px;
+    top: 30px;
+    display: flex; 
+    border-radius: 20px;   
+    width: 30rem;
+}
+.input-group span{
+    width: 150px;
+    color: rgb(239, 232, 232);
+    background: linear-gradient(45deg,rgb(149, 126, 126),rgb(176, 176, 196));
+    padding: 20px;
+    text-align: center;
+}
+.input-group .inp{
+    width: 60%;
+    padding: 10px 15px;
+    border: 1px solid white;
+}
+.submit-inp{
+    font-weight: bold;
+}
+input[type="submit"]{
+    width: 170%;
+     height: 50px;
+     border: 1px solid;
+     background: #1878f3;
+     border-radius: 25px;
+     font-size: 18px;
+     color: #e9f4fb;
+     margin-left: 6rem;
+     font-weight: bold;
+     cursor: pointer;
+     outline: none;
+}
+input[type="submit"]:hover{
+    border-color: #2691d9;
+    transition: .5s;
+}
+.toggle-btn{
+    -webkit-appearance: none;
+    width: 150px;
+    height: 40px;
+    border: 1px solid gray;
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: calc(50% - 75px);
+    border-radius:100px;
+}
+.toggle-btn::before{
+    content: 'Employer';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    color: #f6f8f9;
+    box-shadow: 2px 4px 12px rgb(221, 236, 242);
+    background: #2a5082;  
+    border-radius: 100px;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+}
+.toggle-btn:checked::before{
+    content: 'Employee';
+    left: 50%;
+}
+.toggle-btn:checked + .Employer{
+    left: -101%;
+}
+.toggle-btn:checked + .Employer + .Employee{
+    left: 0%;
+}
+@media(max-width:48rem){
+  .searchME{
+    position: relative;
+    margin-top: 0rem;
+  } 
+  #hero{
+    position: relative;
+    display: inline-block;
+    top:10rem
+  }
+  .container{
+    position: relative;
+    top: 1rem;
+    left: -10%;
+  }
+  .z{
+    position: relative;
+    font-size: 30px;
+    left: -6rem;
+  }
+  }
+  

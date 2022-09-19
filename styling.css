@@ -1,0 +1,124 @@
+body{
+    width: 100%;
+    height: 50%;
+    margin: 0px;
+    padding: 0px;
+    background:#f1f2f6;
+    box-sizing: border-box;
+}
+main{
+    height: 10rem;
+    background-position: center;
+    background-size: cover;
+    
+}
+#hero{
+    background:#f1f2f6;
+    height: 5rem;
+    margin: 0rem;
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
+}
+#hero-content{
+    position: relative;
+    display: inline-block;
+    margin-top: 15%;
+    right: 30%;
+    background-color: none;
+    width: 40%;
+    height: 20rem;
+}
+#hero-content h1{
+    font-weight: 10rem;
+    font-family:  Helvetica, Arial, sans-serif;
+    line-height: 1px;
+    color: rgba(44, 68, 79, 0.8);
+}
+#hero .head1{
+    font-size: 60px;
+    font-family:  Helvetica, Arial, sans-serif;
+}
+#hero-content p{
+    position: relative;
+    display: block;
+    font-size:20px;
+    bottom: 4 0px;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.seeme2{
+    position: relative;
+    display: block;
+    right: 80%;
+    bottom: 50%;
+}
+
+.seeme{
+    padding-left: 2rem;
+    color: rgb(191, 188, 188);
+}
+#bar{
+    box-shadow: 2px 4px 12px rgb(6, 113, 163);
+    width: 60rem;
+    position: relative;
+    margin: 10px;
+    margin-left: 70%;
+    background-color: rgb(171, 180, 177);
+    border-radius: 10px;
+}
+#bar ul{ 
+    height: 5px;
+    position: relative;
+    margin:0px auto;
+    margin-left: -20px;
+}
+#bar a{
+    display: inline-block;
+    font-size: 1.4rem;
+    color: rgb(90, 67, 67);
+    text-decoration: none;
+}
+.fa-solid:hover{
+    color: rgb(50, 163, 255);
+}
+
+
+@media(max-width:768px){
+#bar{
+        display: none;
+        margin-left: 55%;
+} 
+.seeme{
+        padding: 14px;
+        color: white;
+}
+#hero-content h1{
+    position: relative;
+    color: rgb(59, 54, 118);
+    font-size: 20px;
+}
+#hero-content a{
+    position: relative;
+    margin: 3rem;
+    left: 30rem;
+    font: size 20rem;
+}
+#hero{
+    position: relative;
+    display: inline-block;
+    width: auto;
+    padding-left: 10rem;
+}
+
+#hero .head1{
+    width: auto;
+    font-size: 20px;
+    padding-right: 20px;
+}
+#hero .para1{
+    width: auto;
+    font-size: 20px;
+    padding-right: 20px;
+}
+}
